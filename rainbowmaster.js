@@ -26,8 +26,7 @@ function setup() {
   noLoop()
 }
 
-function draw() {
-}
+function draw() {}
 
 function drawtexture(numero, pal, palcont, modo) {
   //resizeCanvas(40, 180);
@@ -54,7 +53,7 @@ function drawtexture(numero, pal, palcont, modo) {
   }
   if (numero == 1) {
     if (modo == 'w') {
-     
+
       //imageData = createImage(180, 40);
       //resizeCanvas(180, 40);
     }
@@ -168,128 +167,171 @@ function imageppR(mycArr) {
 
 
 /////////////  PALETA
-var inipaleta=[]
-inipaleta[0]={ name: 'random', icon:':-p', prop:{
+var inipaleta = []
+inipaleta[0] = {
+  name: 'random',
+  icon: ':-p',
+  prop: {
     ini: 0,
     n: 36,
     frec: 15,
     neutro: [1, 1],
-    r1: [255, 0.1,1],
-    g1: [255, 0.1,1],
-    b1: [255, 0.1,1],
-    r2: [255, 0.1,1],
-    g2: [255, 0.1,1],
-    b2: [255, 0.1,1]
-  }}   
-inipaleta[1]={ name: 'vivid', icon:':-)', prop:{
+    r1: [255, 0.1, 1],
+    g1: [255, 0.1, 1],
+    b1: [255, 0.1, 1],
+    r2: [255, 0.1, 1],
+    g2: [255, 0.1, 1],
+    b2: [255, 0.1, 1]
+  }
+}
+inipaleta[1] = {
+  name: 'vivid',
+  icon: ':-)',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [255, 0.1,1],
-    g1: [255, 0.1,1],
-    b1: [255, 0.1,1],
-    r2: [255, 0.1,1],
-    g2: [255, 0.1,1],
-    b2: [255, 0.1,1]
-  }}   
-inipaleta[2]={ name: 'dark', icon:':-(', prop:{
+    r1: [255, 0.1, 1],
+    g1: [255, 0.1, 1],
+    b1: [255, 0.1, 1],
+    r2: [255, 0.1, 1],
+    g2: [255, 0.1, 1],
+    b2: [255, 0.1, 1]
+  }
+}
+inipaleta[2] = {
+  name: 'dark',
+  icon: ':-(',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [90, 0.1,0.5],
-    g1: [90, 0.1,0.5],
-    b1: [90, 0.1,0.5],
-    r2: [90, 0.1,0.5],
-    g2: [90, 0.1,0.5],
-    b2: [90, 0.1,0.5]
-  }}
-inipaleta[3]={ name: 'bright', icon:':-D', prop:{
+    r1: [90, 0.1, 0.5],
+    g1: [90, 0.1, 0.5],
+    b1: [90, 0.1, 0.5],
+    r2: [90, 0.1, 0.5],
+    g2: [90, 0.1, 0.5],
+    b2: [90, 0.1, 0.5]
+  }
+}
+inipaleta[3] = {
+  name: 'bright',
+  icon: ':-D',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [255, 0.7,1],
-    g1: [255, 0.7,1],
-    b1: [255, 0.7,1],
-    r2: [255, 0.7,1],
-    g2: [255, 0.7,1],
-    b2: [255, 0.7,1]
-  }}   
-inipaleta[4]={ name: 'grey', icon:':-|', prop:{
+    r1: [255, 0.7, 1],
+    g1: [255, 0.7, 1],
+    b1: [255, 0.7, 1],
+    r2: [255, 0.7, 1],
+    g2: [255, 0.7, 1],
+    b2: [255, 0.7, 1]
+  }
+}
+inipaleta[4] = {
+  name: 'grey',
+  icon: ':-|',
+  prop: {
     ini: 0,
     n: 50,
     frec: 5,
     neutro: [0, 0],
-    r1: [255, 0.1,1],
-    g1: [255, 0.1,1],
-    b1: [255, 0.1,1],
-    r2: [255, 0.1,1],
-    g2: [255, 0.1,1],
-    b2: [255, 0.1,1]
-  }}   
-  inipaleta[5]={ name: 'red', icon:':-*', prop:{
+    r1: [255, 0.1, 1],
+    g1: [255, 0.1, 1],
+    b1: [255, 0.1, 1],
+    r2: [255, 0.1, 1],
+    g2: [255, 0.1, 1],
+    b2: [255, 0.1, 1]
+  }
+}
+inipaleta[5] = {
+  name: 'red',
+  icon: ':-*',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [195, 0.4,1],
-    g1: [40, 0.4,1],
-    b1: [40, 0.4,1],
-    r2: [255, 0.4,1],
-    g2: [0, 0.4,1],
-    b2: [0, 0.4,1]
-  }}
-   inipaleta[6]={ name: 'green', icon:';-)', prop:{
+    r1: [195, 0.4, 1],
+    g1: [40, 0.4, 1],
+    b1: [40, 0.4, 1],
+    r2: [255, 0.4, 1],
+    g2: [0, 0.4, 1],
+    b2: [0, 0.4, 1]
+  }
+}
+inipaleta[6] = {
+  name: 'green',
+  icon: ';-)',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [40, 0.4,1],
-    g1: [50, 0.4,1],
-    b1: [40, 0.4,1],
-    r2: [0, 0.4,1],
-    g2: [255, 0.4,1],
-    b2: [0, 0.4,1]
-  }}
-    inipaleta[7]={ name: 'blue', icon:';-(', prop:{
+    r1: [40, 0.4, 1],
+    g1: [50, 0.4, 1],
+    b1: [40, 0.4, 1],
+    r2: [0, 0.4, 1],
+    g2: [255, 0.4, 1],
+    b2: [0, 0.4, 1]
+  }
+}
+inipaleta[7] = {
+  name: 'blue',
+  icon: ';-(',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [40, 0.7,1],
-    g1: [40, 0.7,1],
-    b1: [150, 0.7,1],
-    r2: [0, 0.7,1],
-    g2: [0, 0.7,1],
-    b2: [255, 0.7,1]
-  }}
- inipaleta[8]={ name: 'cyan', icon:'o:-)', prop:{
+    r1: [40, 0.7, 1],
+    g1: [40, 0.7, 1],
+    b1: [150, 0.7, 1],
+    r2: [0, 0.7, 1],
+    g2: [0, 0.7, 1],
+    b2: [255, 0.7, 1]
+  }
+}
+inipaleta[8] = {
+  name: 'cyan',
+  icon: 'o:-)',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [0, 0.9,1],
-    g1: [190, 0.9,1],
-    b1: [190, 0.9,1],
-    r2: [0, 0.9,1],
-    g2: [255, 0.9,1],
-    b2: [255, 0.9,1]
-  }}
-  inipaleta[9]={ name: 'magenta', icon:'8-)', prop:{
+    r1: [0, 0.9, 1],
+    g1: [190, 0.9, 1],
+    b1: [190, 0.9, 1],
+    r2: [0, 0.9, 1],
+    g2: [255, 0.9, 1],
+    b2: [255, 0.9, 1]
+  }
+}
+inipaleta[9] = {
+  name: 'magenta',
+  icon: '8-)',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [1, 1],
-    r1: [150, 0.7,1],
-    g1: [20, 0.7,1],
-    b1: [150, 0.7,1],
-    r2: [255, 0.7,1],
-    g2: [0, 0.7,1],
-    b2: [255, 0.7,1]
-  }}
-  inipaleta[10]={ name: 'yellow', icon:'xD', prop:{ 
+    r1: [150, 0.7, 1],
+    g1: [20, 0.7, 1],
+    b1: [150, 0.7, 1],
+    r2: [255, 0.7, 1],
+    g2: [0, 0.7, 1],
+    b2: [255, 0.7, 1]
+  }
+}
+inipaleta[10] = {
+  name: 'yellow',
+  icon: 'xD',
+  prop: {
     ini: Math.random() * Math.PI,
     n: 36,
     frec: 2,
@@ -300,8 +342,12 @@ inipaleta[4]={ name: 'grey', icon:':-|', prop:{
     r2: [255, 0.7, 1],
     g2: [255, 0.7, 1],
     b2: [0, 0.7, 1]
-  }}
-inipaleta[11]={ name: 'brown', icon:'x(', prop:{ 
+  }
+}
+inipaleta[11] = {
+  name: 'brown',
+  icon: 'x(',
+  prop: {
     ini: 0,
     n: 36,
     frec: 3,
@@ -312,27 +358,32 @@ inipaleta[11]={ name: 'brown', icon:'x(', prop:{
     r2: [50, 0.7, 1],
     g2: [85, 0.7, 1],
     b2: [0, 0.7, 1]
-  }}
- inipaleta[12]={ name: 'dun', icon:'|-)', prop:{
+  }
+}
+inipaleta[12] = {
+  name: 'dun',
+  icon: '|-)',
+  prop: {
     ini: 0,
     n: 36,
     frec: 2,
     neutro: [0.2, 0.3],
-    r1: [45, 0,0.5],
-    g1: [45, 0,0.5],
-    b1: [45, 0,0.5],
-    r2: [185, 0.5,1],
-    g2: [185, 0.5,1],
-    b2: [185, 0.5,1]
-  }}
-  
+    r1: [45, 0, 0.5],
+    g1: [45, 0, 0.5],
+    b1: [45, 0, 0.5],
+    r2: [185, 0.5, 1],
+    g2: [185, 0.5, 1],
+    b2: [185, 0.5, 1]
+  }
+}
+
 /*var iconums=[]
 for(var a=0;a<inipaleta.length;a++){
 iconums.push(inipaleta[a].icon)
 }
 console.log(iconums)
 */
-var iconums=[
+var iconums = [
   ":-p",
   ":-)",
   ":-(",
@@ -350,112 +401,112 @@ var iconums=[
 
 //////////////// RAINBOW
 
-   class RainbowGradient {
-     constructor(s) {
-       this.r1 = s.r1
-       this.g1 = s.g1
-       this.b1 = s.b1
-       this.r2 = s.r2
-       this.g2 = s.g2
-       this.b2 = s.b2
-       this.r = s.r1
-       this.g = s.g1
-       this.b = s.b1
-       this.n = s.n
-       this.neutro = s.neutro
-       this.listcolor = []
-       this.ini = s.ini
-       this.ini3 = (Math.PI * 2 * s.neutro[0]) / 3
-       this.T1 = s.ini
-       this.T2 = s.ini + this.ini3
-       this.T3 = s.ini + this.ini3 * 2
-       this.mod = 1 / (s.n * s.frec)
-       this.modsin = Math.PI / s.n
-       this.modColor = (Math.PI * 2 * s.frec) / s.n
+class RainbowGradient {
+  constructor(s) {
+    this.r1 = s.r1
+    this.g1 = s.g1
+    this.b1 = s.b1
+    this.r2 = s.r2
+    this.g2 = s.g2
+    this.b2 = s.b2
+    this.r = s.r1
+    this.g = s.g1
+    this.b = s.b1
+    this.n = s.n
+    this.neutro = s.neutro
+    this.listcolor = []
+    this.ini = s.ini
+    this.ini3 = (Math.PI * 2 * s.neutro[0]) / 3
+    this.T1 = s.ini
+    this.T2 = s.ini + this.ini3
+    this.T3 = s.ini + this.ini3 * 2
+    this.mod = 1 / (s.n * s.frec)
+    this.modsin = Math.PI / s.n
+    this.modColor = (Math.PI * 2 * s.frec) / s.n
 
 
-       this.R = 0
-       this.G = 0
-       this.B = 0
-       this.inc = 0
-       this.incsin = 0
-       this.countsin = 0
-       this.count = 0
-       this.color = [0, 0, 0]
-       //console.log(4)
-     }
-     updateNeutro() {
-       var ntr = lerpe(this.neutro[1], this.neutro[0], this.count)
-       this.modColor = ntr
-     }
-     allColors(n) {
-       this.listcolor = []
-       var moda = 1 / n
-       var mmcont = 0
-       for (var a = 0; a < n; a++) {
-         this.r[0] = parseInt(lerpe(this.r1[0], this.r2[0], moda * a))
-         this.g[0] = parseInt(lerpe(this.g1[0], this.g2[0], moda * a))
-         this.b[0] = parseInt(lerpe(this.b1[0], this.b2[0], moda * a))
-         this.RGB()
-         this.listcolor[a] = this.color
-       }
-       //console.log(this.listcolor.length)
-       return this.listcolor
+    this.R = 0
+    this.G = 0
+    this.B = 0
+    this.inc = 0
+    this.incsin = 0
+    this.countsin = 0
+    this.count = 0
+    this.color = [0, 0, 0]
+    //console.log(4)
+  }
+  updateNeutro() {
+    var ntr = lerpe(this.neutro[1], this.neutro[0], this.count)
+    this.modColor = ntr
+  }
+  allColors(n) {
+    this.listcolor = []
+    var moda = 1 / n
+    var mmcont = 0
+    for (var a = 0; a < n; a++) {
+      this.r[0] = parseInt(lerpe(this.r1[0], this.r2[0], moda * a))
+      this.g[0] = parseInt(lerpe(this.g1[0], this.g2[0], moda * a))
+      this.b[0] = parseInt(lerpe(this.b1[0], this.b2[0], moda * a))
+      this.RGB()
+      this.listcolor[a] = this.color
+    }
+    //console.log(this.listcolor.length)
+    return this.listcolor
 
-     }
-     RGB() {
-       var r = mape(Math.sin(this.T1), -1, 1, this.r[0] * this.r[1], this.r[0] * this.r[2])
-       //var r = Math.sin(this.T1)*this.r[0]
-       //var dr = (this.r[0] - r) * 1
-       this.R = parseInt(r); // - dr
-       //this.T1 += TWO_PI / this.mR
-       this.T1 += this.modColor
+  }
+  RGB() {
+    var r = mape(Math.sin(this.T1), -1, 1, this.r[0] * this.r[1], this.r[0] * this.r[2])
+    //var r = Math.sin(this.T1)*this.r[0]
+    //var dr = (this.r[0] - r) * 1
+    this.R = parseInt(r); // - dr
+    //this.T1 += TWO_PI / this.mR
+    this.T1 += this.modColor
 
-       var g = mape(Math.sin(this.T2), -1, 1, this.g[0] * this.g[1], this.g[0] * this.g[2])
-       //var g=Math.sin(this.T2)*this.g[0]
-       //var dg = (this.g[0] - g) * 1
-       this.G = parseInt(g); //- dg
-       //this.T2 += TWO_PI / this.mG
-       this.T2 += this.modColor
+    var g = mape(Math.sin(this.T2), -1, 1, this.g[0] * this.g[1], this.g[0] * this.g[2])
+    //var g=Math.sin(this.T2)*this.g[0]
+    //var dg = (this.g[0] - g) * 1
+    this.G = parseInt(g); //- dg
+    //this.T2 += TWO_PI / this.mG
+    this.T2 += this.modColor
 
-       var b = mape(Math.sin(this.T3), -1, 1, this.b[0] * this.b[1], this.b[0] * this.b[2])
-       //var b =Math.sin(this.T3)*this.b[0]
-       //var db = (this.b[0] - b) * 1
-       this.B = parseInt(b); //- db
-       //this.T3 += TWO_PI / this.mB
-       this.T3 += this.modColor
+    var b = mape(Math.sin(this.T3), -1, 1, this.b[0] * this.b[1], this.b[0] * this.b[2])
+    //var b =Math.sin(this.T3)*this.b[0]
+    //var db = (this.b[0] - b) * 1
+    this.B = parseInt(b); //- db
+    //this.T3 += TWO_PI / this.mB
+    this.T3 += this.modColor
 
-       this.inc += this.mod;
-       this.incsin += this.modsin
-       this.countsin = mape(Math.sin(this.incsin), -1, 1, 0, 1)
-       if (this.inc > 1) {
-         this.reset()
-       }
-       this.count = this.inc
-       this.color = [this.R, this.G, this.B]
+    this.inc += this.mod;
+    this.incsin += this.modsin
+    this.countsin = mape(Math.sin(this.incsin), -1, 1, 0, 1)
+    if (this.inc > 1) {
+      this.reset()
+    }
+    this.count = this.inc
+    this.color = [this.R, this.G, this.B]
 
-     }
-     reset() {
+  }
+  reset() {
 
-       if (this.neutro[0] <= 0.9) {
-         this.neutro[0] += 0.0006
-         this.ini -= 0.01
-         this.r[0] += 0.1
-         this.g[0] += 0.1
-         this.b[0] += 0.1
-       }
+    if (this.neutro[0] <= 0.9) {
+      this.neutro[0] += 0.0006
+      this.ini -= 0.01
+      this.r[0] += 0.1
+      this.g[0] += 0.1
+      this.b[0] += 0.1
+    }
 
-       this.ini3 = (Math.PI * 2 * this.neutro[0]) / 3
-       this.T1 = this.ini
-       this.T2 = this.ini + this.ini3
-       this.T3 = this.ini + this.ini3 * 2
-       this.count = 0
-       this.inc = 0;
-       this.incsin = 0;
+    this.ini3 = (Math.PI * 2 * this.neutro[0]) / 3
+    this.T1 = this.ini
+    this.T2 = this.ini + this.ini3
+    this.T3 = this.ini + this.ini3 * 2
+    this.count = 0
+    this.inc = 0;
+    this.incsin = 0;
 
-     }
+  }
 
-   }
+}
 
 
 
@@ -836,11 +887,12 @@ function findNumberEmoti(c) {
   }
   return r
 }
+
 function mytrim(x) {
-  return x.replace(/^\s+|\s+$/gm,'');
+  return x.replace(/^\s+|\s+$/gm, '');
 }
-  
-  
+
+
 var paleta = []
 var foto = []
 var DEFAULTimage = ''
@@ -876,10 +928,10 @@ function showw() {
 
   var trs
   for (var a = 0; a < splitext.length; a++) {
-    trs=mytrim(splitext[a])
-    if(trs.substring(0,2)!='//'){
-    u = splitext[a].split(' ')
-    spaces.push(u)
+    trs = mytrim(splitext[a])
+    if (trs.substring(0, 2) != '//') {
+      u = splitext[a].split(' ')
+      spaces.push(u)
     }
   }
   var cad = '';
@@ -1020,8 +1072,8 @@ function showw() {
 
   foto = []
 
-  for (var a = 0; a < spaces.length; a++) {  
-    
+  for (var a = 0; a < spaces.length; a++) {
+
     /////// INSIDE PARAGRAPH
     var oc = otrocolor(listcolor[nemoji][ccc])
     if (spaces[a].length > 1) {
@@ -1032,66 +1084,116 @@ function showw() {
          if( FONTmix[2].d.indexOf(spaces[a][i].substring(2))>-1){ spaces[a][i] = '<span '+FONTmix[2].r+'>' + spaces[a][i].substring(2) + '</span>'}
          if( FONTmix[3].d.indexOf(spaces[a][i].substring(3))>-1){ spaces[a][i] = '<span '+FONTmix[3].r+'>' + spaces[a][i].substring(3) + '</span>'}
         */
-       
+        var estilo = ''
         if (spaces[a][i].substring(0, 2) == 'l1' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:large;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:large;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:large;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
-       if (spaces[a][i].substring(0, 2) == 'l2' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:x-large;">' + spaces[a][i].substring(2) + '</span>';
+        if (spaces[a][i].substring(0, 2) == 'l2' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          //spaces[a][i] = '<span style="font-size:x-large;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:xlarge;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l3' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:xx-large;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:xx-large;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:xx-large;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l4' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:150%;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:150%;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:150%;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l5' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:300%;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:300%;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:300%;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l6' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:300%;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:300%;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:400%;'
+          spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l7' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:500%;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:500%;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:500%;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l8' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:700%;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:700%;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:700%;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'l9' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="font-size:1000%;">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="font-size:1000%;">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'font-size:100%;'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
-        if (spaces[a][i].substring(0, 2) == 'c0' && spaces[a][i].length > 2 ) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[0][parseInt(Math.random()*listcolor[0].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+         if (spaces[a][i].substring(0, 2) == 'c+' && spaces[a][i].length > 2) {
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[0][parseInt(Math.random()*listcolor[0].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:#fff;'
+          spaces[a][i] = spaces[a][i].substring(2)
+        }
+        if (spaces[a][i].substring(0, 2) == 'c-' && spaces[a][i].length > 2) {
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[0][parseInt(Math.random()*listcolor[0].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:#000;'
+          spaces[a][i] = spaces[a][i].substring(2)
+        }
+        if (spaces[a][i].substring(0, 2) == 'c0' && spaces[a][i].length > 2) {
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[0][parseInt(Math.random()*listcolor[0].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[0][parseInt(Math.random() * listcolor[0].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c1' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[1][parseInt(Math.random()*listcolor[1].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[1][parseInt(Math.random()*listcolor[1].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[1][parseInt(Math.random() * listcolor[1].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c2' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[2][parseInt(Math.random()*listcolor[2].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[2][parseInt(Math.random()*listcolor[2].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[2][parseInt(Math.random() * listcolor[2].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c3' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[3][parseInt(Math.random()*listcolor[3].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[3][parseInt(Math.random()*listcolor[3].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[3][parseInt(Math.random() * listcolor[3].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c4' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[4][parseInt(Math.random()*listcolor[4].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[4][parseInt(Math.random()*listcolor[4].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[4][parseInt(Math.random() * listcolor[4].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c5' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[5][parseInt(Math.random()*listcolor[5].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[5][parseInt(Math.random()*listcolor[5].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[5][parseInt(Math.random() * listcolor[5].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c6' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[6][parseInt(Math.random()*listcolor[6].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[6][parseInt(Math.random()*listcolor[6].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[6][parseInt(Math.random() * listcolor[6].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c7' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[7][parseInt(Math.random()*listcolor[7].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[7][parseInt(Math.random()*listcolor[7].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[7][parseInt(Math.random() * listcolor[7].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c8' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[8][parseInt(Math.random()*listcolor[8].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[8][parseInt(Math.random()*listcolor[8].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[8][parseInt(Math.random() * listcolor[8].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'c9' && spaces[a][i].length > 2) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[9][parseInt(Math.random()*listcolor[9].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[9][parseInt(Math.random()*listcolor[9].length)]+');">' + spaces[a][i].substring(2) + '</span>';
+          estilo += 'color:rgb(' + listcolor[9][parseInt(Math.random() * listcolor[9].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 3) == 'c10' && spaces[a][i].length > 3) {
-          spaces[a][i] = '<span style="color:rgb('+listcolor[10][parseInt(Math.random()*listcolor[10].length)]+');">' + spaces[a][i].substring(3) + '</span>';
+          //spaces[a][i] = '<span style="color:rgb('+listcolor[10][parseInt(Math.random()*listcolor[10].length)]+');">' + spaces[a][i].substring(3) + '</span>';
+          estilo += 'color:rgb(' + listcolor[10][parseInt(Math.random() * listcolor[10].length)] + ');'
+          spaces[a][i] = spaces[a][i].substring(2)
         }
         if (spaces[a][i].substring(0, 2) == 'bb' && spaces[a][i].length > 2) {
           spaces[a][i] = '<b>' + spaces[a][i].substring(2) + '</b>';
@@ -1113,6 +1215,9 @@ function showw() {
           spaces[a][i] = '<img src="' + spaces[a][i].substring(1) + '" width="180px">';
           //}
         }
+        if (estilo.length > 1) {
+          spaces[a][i] = '<span style="' + estilo + '">' + spaces[a][i] + '</span>';
+        }
       }
     }
     if (spaces[a][0] != null) {
@@ -1124,10 +1229,10 @@ function showw() {
         spaces[a][0] = spaces[a][0].substring(1);
         //imgg += 'background-size:cover; background-image:linear-gradient(rgba(255,255,255,'+'0.5'+'), rgba(255,255,255,'+'0.5'+')),url( ' + spaces[a][0] + ' );'
         imgg += 'background-size:cover; background-image:url( ' + spaces[a][0] + ' ); opacity:0.85;'
-        
+
         spaces[a] = spaces[a].splice(1)
         ht = ''
-        isground=true
+        isground = true
       }
       if (ht == 'http' || ht == '-htt' || ht == 'ihtt' || ht == 'ahtt') {
 
@@ -1725,19 +1830,19 @@ function showw() {
           spaces[a] = spaces[a].splice(1)
           imgg += 'font-size:150%;'
         }
-         if (spaces[a][0] == 'l5') {
+        if (spaces[a][0] == 'l5') {
           spaces[a] = spaces[a].splice(1)
           imgg += 'font-size:200%;'
         }
-         if (spaces[a][0] == 'l6') {
+        if (spaces[a][0] == 'l6') {
           spaces[a] = spaces[a].splice(1)
           imgg += 'font-size:300%;'
         }
-         if (spaces[a][0] == 'l7') {
+        if (spaces[a][0] == 'l7') {
           spaces[a] = spaces[a].splice(1)
           imgg += 'font-size:500%;'
         }
-         if (spaces[a][0] == 'l8') {
+        if (spaces[a][0] == 'l8') {
           spaces[a] = spaces[a].splice(1)
           imgg += 'font-size:700%;'
         }
@@ -2029,54 +2134,54 @@ function showw() {
 
           }
         }
-      /////////////// TEXT COLOR
-         //if (typeof spaces[a][0] === 'undefined') {} else {
-          //var ptlog = spaces[a][0].indexOf('c1')
-          if (cadjoin.substring(0, 2) == 'c0') {
-            oc[1] = 'rgb('+listcolor[0][parseInt(Math.random()*listcolor[0].length)]+')'
-            cadjoin = cadjoin.substring(3)
-          }  
-        
-          if (cadjoin.substring(0, 2) == 'c1' && cadjoin.substring(0, 3) != 'c10') {
-            oc[1] = 'rgb('+listcolor[1][parseInt(Math.random()*listcolor[1].length)]+')'
-            cadjoin = cadjoin.substring(3)
-          }
-          if (cadjoin.substring(0, 2) == 'c2') {
-            oc[1] = 'rgb('+listcolor[2][parseInt(Math.random()*listcolor[2].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-         if (cadjoin.substring(0, 2) == 'c3') {
-            oc[1] = 'rgb('+listcolor[3][parseInt(Math.random()*listcolor[3].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-         if (cadjoin.substring(0, 2) == 'c4') {
-            oc[1] = 'rgb('+listcolor[4][parseInt(Math.random()*listcolor[4].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-         if (cadjoin.substring(0, 2) == 'c5') {
-            oc[1] = 'rgb('+listcolor[5][parseInt(Math.random()*listcolor[5].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-         if (cadjoin.substring(0, 2) == 'c6') {
-            oc[1] = 'rgb('+listcolor[6][parseInt(Math.random()*listcolor[6].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-          if (cadjoin.substring(0, 2) == 'c7') {
-            oc[1] = 'rgb('+listcolor[7][parseInt(Math.random()*listcolor[7].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-          if (cadjoin.substring(0, 2) == 'c8') {
-            oc[1] = 'rgb('+listcolor[8][parseInt(Math.random()*listcolor[8].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-         if (cadjoin.substring(0, 2) == 'c9') {
-            oc[1] = 'rgb('+listcolor[9][parseInt(Math.random()*listcolor[9].length)]+')'
-           cadjoin = cadjoin.substring(3)
-          }
-          if (cadjoin.substring(0, 3) == 'c10') {
-            oc[1] = 'rgb('+listcolor[10][parseInt(Math.random()*listcolor[10].length)]+')'
-           cadjoin = cadjoin.substring(4)
-          }
+        /////////////// TEXT COLOR
+        //if (typeof spaces[a][0] === 'undefined') {} else {
+        //var ptlog = spaces[a][0].indexOf('c1')
+        if (cadjoin.substring(0, 2) == 'c0') {
+          oc[1] = 'rgb(' + listcolor[0][parseInt(Math.random() * listcolor[0].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+
+        if (cadjoin.substring(0, 2) == 'c1' && cadjoin.substring(0, 3) != 'c10') {
+          oc[1] = 'rgb(' + listcolor[1][parseInt(Math.random() * listcolor[1].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c2') {
+          oc[1] = 'rgb(' + listcolor[2][parseInt(Math.random() * listcolor[2].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c3') {
+          oc[1] = 'rgb(' + listcolor[3][parseInt(Math.random() * listcolor[3].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c4') {
+          oc[1] = 'rgb(' + listcolor[4][parseInt(Math.random() * listcolor[4].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c5') {
+          oc[1] = 'rgb(' + listcolor[5][parseInt(Math.random() * listcolor[5].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c6') {
+          oc[1] = 'rgb(' + listcolor[6][parseInt(Math.random() * listcolor[6].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c7') {
+          oc[1] = 'rgb(' + listcolor[7][parseInt(Math.random() * listcolor[7].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c8') {
+          oc[1] = 'rgb(' + listcolor[8][parseInt(Math.random() * listcolor[8].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 2) == 'c9') {
+          oc[1] = 'rgb(' + listcolor[9][parseInt(Math.random() * listcolor[9].length)] + ')'
+          cadjoin = cadjoin.substring(3)
+        }
+        if (cadjoin.substring(0, 3) == 'c10') {
+          oc[1] = 'rgb(' + listcolor[10][parseInt(Math.random() * listcolor[10].length)] + ')'
+          cadjoin = cadjoin.substring(4)
+        }
         /////////
 
 
