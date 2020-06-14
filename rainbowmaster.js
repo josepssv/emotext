@@ -1032,6 +1032,34 @@ function showw() {
          if( FONTmix[2].d.indexOf(spaces[a][i].substring(2))>-1){ spaces[a][i] = '<span '+FONTmix[2].r+'>' + spaces[a][i].substring(2) + '</span>'}
          if( FONTmix[3].d.indexOf(spaces[a][i].substring(3))>-1){ spaces[a][i] = '<span '+FONTmix[3].r+'>' + spaces[a][i].substring(3) + '</span>'}
         */
+       
+        if (spaces[a][i].substring(0, 2) == 'l1' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:large;">' + spaces[a][i].substring(2) + '</span>';
+        }
+       if (spaces[a][i].substring(0, 2) == 'l2' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:x-large;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l3' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:xx-large;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l4' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:150%;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l5' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:300%;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l6' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:300%;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l7' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:500%;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l8' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:700%;">' + spaces[a][i].substring(2) + '</span>';
+        }
+        if (spaces[a][i].substring(0, 2) == 'l9' && spaces[a][i].length > 2 && spaces[a][i].substring(0, 3) != 'c10') {
+          spaces[a][i] = '<span style="font-size:1000%;">' + spaces[a][i].substring(2) + '</span>';
+        }
         if (spaces[a][i].substring(0, 2) == 'c0' && spaces[a][i].length > 2 ) {
           spaces[a][i] = '<span style="color:rgb('+listcolor[0][parseInt(Math.random()*listcolor[0].length)]+');">' + spaces[a][i].substring(2) + '</span>';
         }
