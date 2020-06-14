@@ -271,11 +271,11 @@ inipaleta[4]={ name: 'grey', icon:':-|', prop:{
     frec: 2,
     neutro: [1, 1],
     r1: [0, 0.9,1],
-    g1: [180, 0.9,1],
-    b1: [180, 0.9,1],
-    r2: [0, 1,1],
-    g2: [255, 1,1],
-    b2: [255, 1,1]
+    g1: [190, 0.9,1],
+    b1: [190, 0.9,1],
+    r2: [0, 0.9,1],
+    g2: [255, 0.9,1],
+    b2: [255, 0.9,1]
   }}
   inipaleta[9]={ name: 'magenta', icon:'8-)', prop:{
     ini: 0,
@@ -2009,7 +2009,7 @@ function showw() {
             cadjoin = cadjoin.substring(3)
           }  
         
-          if (cadjoin.substring(0, 2) == 'c1' && cadjoin.substring(0, 3) == 'c10') {
+          if (cadjoin.substring(0, 2) == 'c1' && cadjoin.substring(0, 3) != 'c10') {
             oc[1] = 'rgb('+listcolor[1][parseInt(Math.random()*listcolor[1].length)]+')'
             cadjoin = cadjoin.substring(3)
           }
@@ -2184,7 +2184,7 @@ function colorea() {
 
   //CYAN 8 o:-)
   paleta[8].prop.ini = Math.random() * Math.PI
-  rcolor = new RainbowGradient(paleta[9].prop)
+  rcolor = new RainbowGradient(paleta[8].prop)
   listcolor[8] = rcolor.allColors(100)
   //MAGENTA 9   8-)
   paleta[9].prop.ini = Math.random() * Math.PI
