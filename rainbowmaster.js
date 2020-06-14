@@ -736,7 +736,7 @@ function doBg(elem) {
         ibg[emojiUsed[0].n] = DEFAULTimage;
 
       }
-      console.log(' entra:' + DEFAULTnimage)
+      //console.log(' entra:' + DEFAULTnimage)
     }
     $('#accion').css('background-image', 'url(' + ibg[emojiUsed[0].n] + ')')
     $('#accion').css('background-size', 'cover')
@@ -980,7 +980,7 @@ function showw() {
       np1 = 1
     }
     DEFAULTnimage = np1
-    console.log('ini:' + np1)
+    //console.log('ini:' + np1)
     paleta[np1].prop.n = ncoll
     paleta[np1].prop.frec = frecc
     if (repini > 0) {
@@ -2014,7 +2014,7 @@ function showw() {
             cadjoin = cadjoin.substring(3)
           }
           if (cadjoin.substring(0, 2) == 'c2') {
-            oc[1] = 'rgb('+listcolor[1][parseInt(Math.random()*listcolor[1].length)]+')'
+            oc[1] = 'rgb('+listcolor[2][parseInt(Math.random()*listcolor[2].length)]+')'
            cadjoin = cadjoin.substring(3)
           }
          if (cadjoin.substring(0, 2) == 'c3') {
