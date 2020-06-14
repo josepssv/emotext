@@ -1,5 +1,7 @@
 # emotext
-Hypertext language simplified
+
+** Hypertext language simplified for expressive paragraph and viewer
+
 bb TAGS 
 In the first line make a background gradient in the other lines make a paragraph colored
 
