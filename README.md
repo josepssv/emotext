@@ -1,0 +1,2 @@
+# emotext
+Hypertext language simplified
