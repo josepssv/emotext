@@ -10,6 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <!-- <script src="https://editor.p5js.org/josepssv/sketches/5hLE5Rl8n/rainbowmaster.js?1234567890"></script>-->
+  <script src="emoti.js" > </script>
   <script src="rainbowmaster.js"></script>
   <meta charset="utf-8" />
   <style>
@@ -55,228 +57,123 @@
       bottom: 4px;
       pointer-events: none;
     }
+    
+   
   </style>
   <script>
+
+  
 
   </script>
 </head>
 
 <body>
-  <textarea id="texto" style=" width: 50%; margin: 0 auto;	background-color: #eee; max-width: 740px;  height: 470px; padding: 18px;  display: block; margin-left: auto;  margin-right: auto;">ihttps://i.imgur.com/hAV6F86.jpeg
-0DD:-|i
-
-l2 bb EMOTEXT: a hypertext language for expressive paragraphs using emoticons
-l2 CSS and HTML sub-language
-_ Author: Josepssv ..Waterval-project
-
-- bbKEY bbWORDS .. Hypertext, language, Internet, emoticons, paragraph, color, style, graphic design
-
-o bbABSTRACT.  This is an initial proposal for a higher-level language that simplifies CSS and HTML in order to compose expressive paragraphs. Difficulties in accessing hypertext should be reduced for the general population. The expressiveness of the emoticon associated with color is a contribution of this article. 
--
-bb INTRODUCTION
-o The use of hypertext is popularized today, but only in technological environments. It is out of initial use. Hypertext should be in everyday use like writing. For example, a hyperlink must be easy to embed in a text and also all the simple ways of exposing a text. .. When writing manually, with a pencil we can do it, but when writing plain text on a computer it is more complicated, especially when we want to use color in the text and in the font. ..  Text editors make this formatting easy, which they ultimately translate into an HTML or CSS tag language. The aim of this study is to propose a language where the opening and closing labels are simplified and the expressiveness of color in the text and the format are also simple.  
-bb TAGS 
-In the first line make a background gradient in the other lines make a paragraph colored
-
-If a line have only emoticon then next paragraphs are as this color style
-
-l2 ON THE FIRST LINE  
-
-WidthSymbol or/and brightness or/and emoticon or/and+space  phase +space numOfColors(default 100)
-
-Default (long paragraph, vivid color, phase 2, colors 32)
-
-:-(_:-) Dark to Vivid
-
-.. Short paragraph (WidthSymbol)
-
-DDDDD  brighter and brighter. Five D is White
-
-//Example:
-
-//..DD:-) 2 10
-
-l2 ON THE FIRST LINE AND AT THE BEGINNING OF A LINE
-
-:-p Random
-
-:-) Vivid
-
-:-( Dark
-
-:-D Bright
-
-:-| Grey
-
-:-* Red
-
-;-) Green
-
-;-( Blue
-
-o:-) Cyan
-
-8-) Magenta
-
-xD Yellow
-
-x( Brown
-
-|-) Dun
-
-l2 AT THE BEGINNING OF THE LINE
-
-default (rounded div align center)
-
-0 Frameless
-
-. Frameless alignment center
-
-- Frameless  alignment left
-
-_ Frameless alignment right
-    
-bb bb = bold 
-
-ii ii = italic 
-
-uu uu = underline
-    
-bi bi = bold italic
-
-iu iu = italic underline
-
-bu bu = bold underline 
-
-bui bui = bold underline italic
-
-
-l1 l1 text
-l2 l2 text
-l3 l3 text .. . .. .
-l9 l9 text
-
-s1 s1 text
-s2 s2 text
-s3 s3 text
-
-l1 //  comment
-// this is a comment
-// this is another comment
-    
-.. Harmonic linear gradient
-
-., Random linear gradient
-
-.o Harmonic radial gradient
-
-.O Random radial gradient  
-
-.- Harmonic left to right linear gradient
-
-._  Random left to right linear gradient
-
-.t Random texture
-
-:-o Surprise
-
-:-pi Random image at background
-
-:-)i Vivid image at background
-
-:-(i Dark image at background
-
-:-Di Bright image at background
-
-:-|i Grey image at background
-    
-ihttps://i.imgur.com/dssCwFE.gif My own image at background
-
--https://editor.p5js.org/  link
-
-ahttps://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/El_Capitan_01.JPG/300px-El_Capitan_01.JPG http://google.com  image and link
-
-.t Random pixel background texture
-
--t Random pixel background Texture
-
-.t2  Two color as vertical background
-
--t2 Two color as horizontal background
-
-c0 Random text color
-c1 Vidid text color
-c2 Brigth text color
-c3 Dark text color
-c4 Grey text color
-c5 Red text color
-c6 Green text color
-c7 Blue text color  
-c8 Cyan text color
-c9 Magenta text color
-c10 Yellow text color
-
-
-l2 MIXING
-l3 . bb   l3 . bb  ..  size3, frameless centered .. and bold    
-:-) l1 _ ii  :- ) l3 _ ii   .. Vivid, size1, .. right align .. and italic    
-|-)i l1 _ ii  |- ) l3 _ ii   .. Dun image, size1, .. right align ..  and italic    
-l1 - ii .O   <pre>l1 - ii .O     Random radial gradient, size1, left align .. and italic</pre>
-l2 _ bb .t    <pre>l2 _ ii .t     size2, right align, bold .. and random pixel background texture</pre>
-ihttps://i.imgur.com/kKjvbml.jpg l2 _ bb c5  iht..tps://i.imgur.com/kKjvbml.jpg l2 _ bb ..   My own image, size2, right align .. and bold  
-l3 .- c5  l6 .- c5  .. size3, left linear gradient .. and red
-    
-l2 IN THE PARAGRAPH
-
-break line ..(space + two points) ..New line
-
-A image ihttps://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/El_Capitan_01.JPG/300px-El_Capitan_01.JPG and some text
-
- bb put a bbbold bbtext
-
- ii put a iiitalic iitext
- 
- uu put a uuunderline uutext
-  
- 
-A text width hiper link http://editor.p5js.org  or www.google.com  
-
-c1 c2 c3 c4  c5 c6.. c10 .. c0A c1text c2with c3some c4colors c5and c6more c8and c9more c7colors
-
-l2 EXAMPLES
-
-____________________
-
-:-D
-
-;-) .. Green linear gradient ..Hello Word
-
-0
-
-______________________
-
-:-)
-
-;-) .o Green radial gradient
-
-Bye
-
-___________________________
-
-
-
+  <div id="accion" style="position:relative;display:none; border-radius: 12px; margin: 0 auto;background-color: #444;text-align:center;top:20px;"></div>
+ <textarea id="texto" style="position:relative;top:0px; width: 50%; margin: 0 auto;  background-color: #eee; max-width: 740px;  height: 470px; padding: 18px;  display:none; margin-left: auto;  margin-right: auto;">
+ghttps://waterval-project.com/book/plastic/pages/plastic.jpg
+f3 
+w500 h2000 m9 p8
+ODD:-|i 4 23
+X :-) .. c2 o7 w484px .. We sketching.. ..   
+w80% ttb6 line --    .. to --  .. ..line ..;)
+//.t3 
+ihttps://i.pinimg.com/originals/61/bb/b5/61bbb53381f67655b4c101d0d6a9fcd8.jpg x180y49 l4 c2 o4 w124px h90px s1writing  ..     ..  ..  
+.. line -- to -- line
+line -- to -- line
+-http://google.com and
+ihttps://waterval-project.com/book/plastic/pages/plastic.jpg  l5c3bbword -- l4c1uuto -- l5c8iiword 
+0 l5  :-)   ahttp://google.com ihttw60_https://i.pinimg.com/originals/61/bb/b5/61bbb53381f67655b4c101d0d6a9fcd8.jpg
+1h #999
+0 l2 bb c9 h214px EL SALUDO
+X w94% How are you? ..l3c1bb I'm fine ..And you?
+;-)    .. 
+X .- Come on
+0    
+0h
+0    
+1h #d0d
+1
+2
+0  
+2h #0d0
+1
+2
+0   
+0h
+
+1h #d00
+0   
+ hello
+   1
+   2
+   3
+   4
+2h https://waterval-project.com/book/plastic/pages/3.png 
+0 
+   world  
+   1
+   2
+   3
+   4
+3h #ff0
+0 
+   hola
+   1
+   2
+   3
+0h
+0  
+..   hello word 
+   hola mundo
+0 
+:-(
+1h #d00
+0   
+   
+ hello
+   1
+   2
+   3
+   4
+2h https://waterval-project.com/book/plastic/pages/3.png 
+0 
+   world  
+   1
+   2
+   3
+   4
+3h #ff0
+   0   
+   hola
+..   1
+   2
+   3
+   
+4h #0f0
+   
+mundo
+   1
+   2
+   3
+0h
+   
+x4y3 l4 .. w35px <span id="pen" style="cursor:copy;">&#9998;</span>
+//song <iframe scrolling="no" style="background-color:transparent;width:100%;" src="https://www.wikiloops.com/embed/180861" width="300" height="175" frameborder="0"></iframe>
+x0y66 l4 .. w35px aidhsong ihttw35_https://i.pinimg.com/originals/61/bb/b5/61bbb53381f67655b4c101d0d6a9fcd8.jpg .. aithsong YouDo<br>This
+   
 </textarea>
   <div id="textureCanvas" style="position:absolute;top:-2999px"></div>
-  <div id="accion" style="position:relative;display:none; border-radius: 12px; padding:30px; max-width: 740px; margin: 0 auto;background-color: #444;text-align:center;"></div>
-
+ 
   <div id="dconvert" style="display:none;">
     <button id="bconvert">
       SHOW
     </button>
   </div>
-  <div id="logo" style="padding:40px 4px;position:absolute;left:3px;top:0px;font-size:10px;color:#777; border-right: 1px solid #777;">
-    <span id="clearbutt" style="cursor:pointer;position:relative;top:-340px;left:65px;font-size:x-large;color:#f00">X</span><img src="https://i.imgur.com/TUzQeBy.png" width="50px"><br>
-
+  <div id="logo" style="display:none;padding:40px 4px;position:absolute;left:3px;top:0px;font-size:10px;color:#777; border-right: 1px solid #777;">
+    <span id="clearbutt" style="cursor:pointer;position:relative;top:-340px;left:65px;font-size:x-large;color:#f00">X</span><img id="rainbowmaster" src="https://i.imgur.com/TUzQeBy.png" width="50px" style="cursor:pointer;"><br>
+    <button id="copyHtmlCode" style="width:100px;font-size:10px;">CopyHtmlcode</button><br>
+    <button id="copyEmotextCode" style="width:100px;font-size:10px;">CopyEmotextcode</button>
+    <br>
     DEMOS<br><br>
     <a href="javascript:demo(0)" style="color:#777; text-decoration:none;">:-p Random</a><br>
     <a href="javascript:demo(1)" style="color:#777; text-decoration:none;">:-) Vivid</a><br>
