@@ -1,7 +1,7 @@
 ////////////  SKETCH
 var DEFAULTpageHeight=579
 var DEFAULTpageHeight=579;
-
+var DEFAULTdivHeight='579px'
 var imageData
 var wi = 30
 var he = 148
