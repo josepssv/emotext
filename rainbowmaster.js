@@ -1,4 +1,6 @@
 ////////////  SKETCH
+var DEFAULTpageHeight=579
+var DEFAULTpageHeight=579;
 
 var imageData
 var wi = 30
