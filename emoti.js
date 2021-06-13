@@ -27,7 +27,8 @@ DEFAULTpageHeight=579
 DEFAULTdivHeight=''; //height:200px;  
 
 function extrasave(){
-  
+   $('#pen').on("click", function(e) {   pen() });
+
 }
 function extraShow(){
   //console.log('show')
