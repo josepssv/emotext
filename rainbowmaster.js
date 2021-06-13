@@ -1,15 +1,5 @@
 ////////////  SKETCH
-var DEFAULTpageHeight=579
-var DEFAULTpageHeight=579;
-var DEFAULTdivHeight='579px'
-function initextra(){
-  var container = $("#texto");
-	container.hide();
-  //mode *= -1
-  $('#accion').show()
 
-  showw()
-}
 var imageData
 var wi = 30
 var he = 148
